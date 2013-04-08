@@ -7,7 +7,5 @@
 
 	dir.find('../', options, function(err, files) {
 		files = _.flatten(files);
-		if(	err) console.log('ERROR: '+ (err));
-			console.log((files));
-		console.log("done 2")	
+		console.log((files));
 	});
