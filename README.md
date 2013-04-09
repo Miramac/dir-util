@@ -1,7 +1,7 @@
 dir-util.js
 =======================
 
-Node module to work with directories and files like finding, analyse or creating from templates using [wrench-js](https://github.com/ryanmcgrath/wrench-js) and [Async.js](https://github.com/caolan/async). 
+Node module to find, analyse or create directories and files using [wrench-js](https://github.com/ryanmcgrath/wrench-js) and [Async.js](https://github.com/caolan/async). 
 
 ## Usage
 
@@ -31,7 +31,7 @@ Find directories and files recursive
 	var dir = require('dir-util')
 	, _ = require('underscore')
 	, options = {
-		filters: [/lib$/i, /\.bak$/i] // directory filters: ['\\\\lib$']  File filter: ['\.zip$'] 'old\.[a-z,A-Z]+$'
+		filters: [/old/i, /\.bak$/i] // directory filter: ['\\\\old$']  File filter: ['\.zip$'] 'old\.[a-z,A-Z]+$'
 	};
 
 	dir.find('../', options, function(err, files) {
