@@ -1,9 +1,9 @@
 {
-	"name": "dir"
+	"name": "dir-util"
 	, "version": "0.1.0"
 	, "repository": {
 		"type" : "git"
-		, "url" : "https://github.com/Miramac/dir.git"
+		, "url" : "https://github.com/Miramac/dir-util.git"
 	}
 	, "dependencies": { 
 		"async": ">=0.1.x"

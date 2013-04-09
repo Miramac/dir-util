@@ -1,11 +1,11 @@
-dir.js
+dir-util.js
 =======================
 
-Node module to work with directories and files like finding, analyse or creating from templates using [wrench-js](https://github.com/ryanmcgrath/wrench-js). 
+Node module to work with directories and files like finding, analyse or creating from templates using [wrench-js](https://github.com/ryanmcgrath/wrench-js) and [Async.js](https://github.com/caolan/async). 
 
-# Usage
+## Usage
 
-## Analyser 
+### Analyser 
 Read directory size recursive:
 
 	var dir = require('dir')
@@ -33,7 +33,7 @@ Read directory size recursive:
 	});
 
 
-## Finder		
+### Finder		
 Find directories and files recursive
 
 	var dir = require('dir')
@@ -48,7 +48,7 @@ Find directories and files recursive
 	});
 
 
-## Delete files or directories recursive
+### Delete files or directories recursive
 
 	var dir = require('dir')
 	dir.rm(path, callback);
