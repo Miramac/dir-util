@@ -8,7 +8,7 @@ Node module to work with directories and files like finding, analyse or creating
 ### Analyser 
 Read directory size recursive:
 
-	var dir = require('dir')
+	var dir = require('dir-util')
 	, options = {
 			filters: ['\.js(on)*$'] //  just count .js or .json files: ['\.js(on)*$']
 			, unit: 'kb'
@@ -36,7 +36,7 @@ Read directory size recursive:
 ### Finder		
 Find directories and files recursive
 
-	var dir = require('dir')
+	var dir = require('dir-util')
 	, _ = require('underscore')
 	, options = {
 		filters: [/lib$/i, /\.bak$/i] // directory filters: ['\\\\lib$']  File filter: ['\.zip$'] 'alt\.[a-z,A-Z]+$'
@@ -50,5 +50,5 @@ Find directories and files recursive
 
 ### Delete files or directories recursive
 
-	var dir = require('dir')
+	var dir = require('dir-util')
 	dir.rm(path, callback);
