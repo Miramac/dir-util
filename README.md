@@ -17,10 +17,10 @@ Read directory size recursive:
 			filters: ['\.js(on)*$'] //  just count .js or .json files: ['\.js(on)*$']
 			, unit: 'kb'
 		}
-	, file = '../'
+	, path = '../'
 	;
   	
-	dir.getSize(file, options, function(err, size) {
+	dir.getSize(path, options, function(err, size) {
 		console.log(dir.to(size, options.unit), options.unit);
 	});
 
