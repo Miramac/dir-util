@@ -21,7 +21,7 @@ Read directory size recursive:
 		;
 			
 		dir.readSize(file, options, function(err, size) {
-      console.log(dir.to(size, options.unit), options.unit);
+			console.log(dir.to(size, options.unit), options.unit);
 			dirlist.dirs.push( { 
 				name: file
 				, size: dir.to(size, options.unit)

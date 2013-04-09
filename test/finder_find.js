@@ -1,7 +1,7 @@
-    var dir = require('../')
+	var dir = require('../')
 	, _ = require('underscore')
     , options = {
-      filters: [/lib$/i, /\.bak$/i] // directory filters: ['\\\\lib$']  File filter: ['\.zip$'] 'alt\.[a-z,A-Z]+$'
+      filters: [/old$/i, /\.bak$/i] // directory filters: ['\\\\lib$']  File filter: ['\.zip$'] 'alt\.[a-z,A-Z]+$'
     };
 
 
