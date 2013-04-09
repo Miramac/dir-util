@@ -13,9 +13,6 @@
 	, "devDependencies": { 
 		"should": ">= 0.0.1" 
 	}
-	, "scripts": { 
-		"test": "node ./test/" 
-	}
 	, "main": "index"
 	, "engines": { 
 		"node": ">= 0.8.x" 
