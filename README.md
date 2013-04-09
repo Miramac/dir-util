@@ -13,23 +13,15 @@ Read directory size recursive:
 			filters: ['\.js(on)*$'] //  just count .js or .json files: ['\.js(on)*$']
 			, unit: 'kb'
 		}
-	, dirlist = { 
-			dirs: []
-			, total:0
+	, options = {
+			filters: ['\.js(on)*$'] //  just count .js or .json files: ['\.js(on)*$']
+			, unit: 'kb'
 		}
 	, file = '../'
 	;
-		
-	dir.readSize(file, options, function(err, size) {
+  	
+	dir.getSize(file, options, function(err, size) {
 		console.log(dir.to(size, options.unit), options.unit);
-		dirlist.dirs.push( { 
-			name: file
-			, size: dir.to(size, options.unit)
-			, group: file.split('/').slice(0,file.split('/').length -2).join('/')
-		} );
-		dirlist.total += dir.to(size, options.unit);
-		
-		console.log(dirlist);
 	});
 
 
@@ -39,7 +31,7 @@ Find directories and files recursive
 	var dir = require('dir-util')
 	, _ = require('underscore')
 	, options = {
-		filters: [/lib$/i, /\.bak$/i] // directory filters: ['\\\\lib$']  File filter: ['\.zip$'] 'alt\.[a-z,A-Z]+$'
+		filters: [/lib$/i, /\.bak$/i] // directory filters: ['\\\\lib$']  File filter: ['\.zip$'] 'old\.[a-z,A-Z]+$'
 	};
 
 	dir.find('../', options, function(err, files) {

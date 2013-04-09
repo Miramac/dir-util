@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/dir');
+module.exports = require('./lib/dir-util');
