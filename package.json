@@ -1,10 +1,10 @@
 {
 	"name": "dir-util",
 	"version": "0.0.1",
-  "description": "Find and analyse recursively directories or files",
-  "author": {
-    "name": ""\Miramac\" Fabian Roloff"
-  },
+	"description": "Find and analyse recursively directories or files",
+	"author": {
+		"name": "Fabian Roloff"
+	},
 	"repository": {
 		"type" : "git",
 		"url" : "https://github.com/Miramac/dir-util.git"
@@ -15,11 +15,13 @@
 		"wrench": ">=1.3.x"
 	},
 	"devDependencies": { 
-    "grunt": "~0.4.1"
+		"grunt": "~0.4.1",
+		"grunt-contrib-jshint": "~0.1.1",
+		"grunt-contrib-nodeunit": "~0.1.2"
 	},
 	"bugs": {
-    "url": "https://github.com/Miramac/dir-util/issues"
-  },
+		"url": "https://github.com/Miramac/dir-util/issues"
+	},
 	"main": "index.js",
 	"engines": { 
 		"node": ">= 0.8.x" 
