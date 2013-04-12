@@ -1,7 +1,7 @@
 dir-util.js
 =======================
 
-Node module to find, analyse or create directories and files using [wrench-js](https://github.com/ryanmcgrath/wrench-js) and [Async.js](https://github.com/caolan/async). 
+Node module to find and analyse directories or files using [wrench-js](https://github.com/ryanmcgrath/wrench-js) and [Async.js](https://github.com/caolan/async). 
 
 ## Usage
 
@@ -9,10 +9,6 @@ Node module to find, analyse or create directories and files using [wrench-js](h
 Read directory size recursive:
 
 	var dir = require('dir-util')
-	, options = {
-			filters: ['\.js(on)*$'] //  just count .js or .json files: ['\.js(on)*$']
-			, unit: 'kb'
-		}
 	, options = {
 			filters: ['\.js(on)*$'] //  just count .js or .json files: ['\.js(on)*$']
 			, unit: 'kb'
@@ -29,13 +25,11 @@ Read directory size recursive:
 Find directories and files recursive
 
 	var dir = require('dir-util')
-	, _ = require('underscore')
 	, options = {
-		filters: [/old/i, /\.bak$/i] // directory filter: ['\\\\old$']  File filter: ['\.zip$'] 'old\.[a-z,A-Z]+$'
+		filters: [/old/i, /\.bak$/i]
 	};
 
 	dir.find('../', options, function(err, files) {
-		files = _.flatten(files);
 		console.log((files));
 	});
 
