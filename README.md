@@ -13,7 +13,7 @@ Read directory size recursive:
 			filters: ['\.js(on)*$'] //  just count .js or .json files: ['\.js(on)*$']
 			, unit: 'kb'
 		}
-	, path = '../'
+	, path = './'
 	;
   	
 	dir.getSize(path, options, function(err, size) {
@@ -27,9 +27,11 @@ Find directories and files recursive
 	var dir = require('dir-util')
 	, options = {
 		filters: [/old/i, /\.bak$/i]
-	};
+	}
+	, path = './'
+	;
 
-	dir.find('../', options, function(err, files) {
+	dir.find(path, options, function(err, files) {
 		console.log((files));
 	});
 
