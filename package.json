@@ -1,6 +1,6 @@
 {
 	"name": "dir-util",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "Find and analyse recursively directories or files",
 	"author": {
 		"name": "Fabian Roloff"
@@ -14,10 +14,17 @@
 		"underscore": ">=1.4.x",
 		"wrench": ">=1.3.x"
 	},
+	"devDependencies": {
+		"nodeunit": ">=0.8.x",
+		"should": ">=1.2.x"
+	},
 	"bugs": {
 		"url": "https://github.com/Miramac/dir-util/issues"
 	},
 	"main": "index.js",
+	"scripts":{ 
+		"test": "./test/test.js > test.html"
+	},
 	"engines": { 
 		"node": ">= 0.8.x" 
 	},
