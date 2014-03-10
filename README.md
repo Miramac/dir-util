@@ -40,6 +40,3 @@ Find directories and files recursive
 
 	var dir = require('dir-util')
 	dir.rm(path, callback);
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Miramac/dir-util/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
