@@ -3,6 +3,9 @@ dir-util.js
 
 Node module to find and analyse directories or files using [wrench-js](https://github.com/ryanmcgrath/wrench-js) and [Async.js](https://github.com/caolan/async). 
 
+## Install
+	npm install dir-util
+
 ## Usage
 
 ### Analyser 
